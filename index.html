@@ -21,8 +21,8 @@
     <main>
         <!-- top player and top blog -->
         <section class="container">
-            <div class="top-players">
-                <h2 class="section-title">top player</h2>
+            <div id="players-bg" class="top-players">
+                <h2 id="top-player" class="section-title">top player</h2>
                 <div class="players">
                     <div class="player">
                         <img src="images/players/player-1.png" alt="">
@@ -162,7 +162,20 @@
                 </div>
             </div>
         </section>
+        <!-- ul section -->
+        <section>
+            <input id="input" type="text" value="0">
+            <button id="increase-btn">increase</button>
+            <ul id="li-container">
+                <li>hello-1</li>
+                <li>hello-2</li>
+                <li>hello-3</li>
+            </ul>
+            <button id="add-button">add</button>
+
+        </section>
     </main>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
