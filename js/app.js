@@ -11,5 +11,9 @@ document.getElementById('add-button').addEventListener('click', function () {
 // increase input value
 document.getElementById('increase-btn').addEventListener('click', function () {
     const input = document.getElementById('input');
-    input.value
+    const previousinput = parseFloat(input.value);
+    if (input.value < 5) {
+        input.value = previousinput + 1;
+    }
+    else { document.getElementById('increase-btn').disabled = true; }
 })
